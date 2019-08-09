@@ -1,0 +1,78 @@
+{
+  "name": "simpletexteditor",
+  "version": "1.0.0",
+  "description": "Simple text editor that has some good features.",
+  "main": "main.js",
+  "homepage": "https://github.com/treezi1004/simpletexteditor#readme",
+  "scripts": {
+    "start": "cd simpletexteditor-react && npm run build && cd .. && electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:osx": "electron-builder --mac",
+    "build:linux": "npm run build:linux32 && npm run build:linux64",
+    "build:linux32": "electron-builder --linux --ia32",
+    "build:linux64": "electron-builder --linux --x64",
+    "build:win": "npm run build:win32 && npm run build:win64",
+    "build:win32": "electron-builder --win --ia32",
+    "build:win64": "electron-builder --win --x64"
+  },
+  "build": {
+    "productName": "Simple Text Editor",
+    "appId": "com.electron.simpletexteditor",
+    "asar": true,
+    "protocols": {
+      "name": "Simple Text Editor",
+      "schemes": [
+        "simpletexteditor"
+      ]
+    },
+    "mac": {
+      "target": [
+        "default"
+      ],
+      "icon": "./resources/icons/windows/ste.ico"
+    },
+    "dmg": {
+      "title": "Simple Text Editor",
+      "icon": "./resources/icons/windows/ste.ico"
+    },
+    "win": {
+      "target": [
+        "zip",
+        "nsis"
+      ],
+      "icon": "./resources/icons/windows/ste.ico"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "zip",
+        "tar.gz"
+      ],
+      "icon": "./resources/icons/windows/ste.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "directories": {
+      "buildResources": "./resources/installer/",
+      "output": "./dist/",
+      "app": "."
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treezi1004/simpletexteditor.git"
+  },
+  "author": "Victor Chanil Park",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treezi1004/simpletexteditor/issues"
+  },
+  "devDependencies": {
+    "electron": "^6.0.1",
+    "electron-builder": "^21.2.0"
+  }
+}

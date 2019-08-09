@@ -1,0 +1,89 @@
+header {
+  width: 100%;
+  background-color: #23272f;
+}
+
+main {
+  width: 100%;
+  height:calc(100% - 30px);
+  min-height:calc(100% - 30px);
+  background-color: #282c34;
+}
+
+footer {
+  color: #cccccc;
+  background-color: #282828;
+  height: 28px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  bottom: 0px;
+  border-top: solid 1px #222222;
+}
+
+.textbox {
+  color: #cccccc;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-color: #282c34;
+  border-width: 0px;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: top;
+  overflow-x: auto;
+  overflow-y: auto;
+  resize: none;
+  white-space: nowrap;
+  font-size: 11pt;
+}
+
+.textbox::selection {
+  color: #cccccc;
+  background-color: #999999;
+}
+
+.textbox:focus {
+  outline-width: 0px;
+}
+
+
+/* styling scrollbar is broken. And it is not officially supported by main stream. */
+/*
+.textbox::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.textbox::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #787c84;
+}
+
+.textbox::-webkit-scrollbar-track {
+	background-color: #282c34;
+}
+
+.textbox::-webkit-scrollbar,
+.textbox::-webkit-scrollbar-thumb,
+.textbox::-webkit-scrollbar-track,
+.textbox::-webkit-scrollbar-track-piece,
+.textbox::-webkit-scrollbar-corner {
+  cursor:pointer;
+}
+*/
+
+#textinfo {
+  height: 100%;
+  width: 100%;
+}
+
+#textinfo span {
+  background-color: #282c34;
+  display: inline-block;
+  border: solid 1px #222222;
+  padding: 2px;
+  margin: 1px 0px 1px 0px;
+}
