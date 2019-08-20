@@ -1,5 +1,5 @@
 # Simeple Text Editor
 
-![](/img/ste.PNG)
+![Alt STE](/img/ste.PNG)
 
 Simple Text Editor :)
