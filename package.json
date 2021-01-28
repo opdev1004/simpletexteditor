@@ -72,7 +72,7 @@
     "url": "https://github.com/treezi1004/simpletexteditor/issues"
   },
   "devDependencies": {
-    "electron": "^6.0.1",
+    "electron": "^9.4.0",
     "electron-builder": "^21.2.0"
   }
 }
